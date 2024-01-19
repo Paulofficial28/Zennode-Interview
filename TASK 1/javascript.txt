@@ -1,0 +1,8 @@
+1. Open your web browser and create a new HTML file.
+2. Open a text editor and create the JavaScript code into the HTML file.
+3. Save the HTML file with a .html extension.
+4. Double-click the HTML file to open it in your default web browser.
+5. Enter the quantities for each product in the prompt.
+   Enter 'yes' or 'no' for gift wrap in the prompt.
+6. Open the browser's console ("Inspect" > "Console").
+   The script will log the invoice details, including subtotal, discounts, gift wrap fee,     shipping fee, and total

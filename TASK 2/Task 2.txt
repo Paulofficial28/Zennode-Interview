@@ -1,0 +1,28 @@
+1. Why do you like to join as a Software developer?
+ 
+	My passion for technology and problem solving leads to get more interest in software field, so that I'm like to be join as software developer.
+
+
+2. List top 3 softwares / tools that inspire you. Why do these tools inspire you?
+
+	Firstly Intelij Idea : It gives new environment for programmer, basically i do well in java and java has more IDE but among that Intelij is one of the favourite for me it give Proper UI, some colorful editorial.
+	
+	Second Google Docs: It is my daily tool that I used for taking notes and solve problems and saved for my reference and also project documentation.
+
+	Last Google Calendar : It is my important one because i schedule everyday activities based on that my daily routine would occur, Thorough which I manage my consisitency in both academics as well as my personal development.
+
+3. List top 3 organisations you like to join in your career & why you like these organisations.
+
+	Till now I didnt set any organisation in my careeer .Because As I am fresher and new to the field the company which gives best earnings and learnings is my organisation.
+
+4. How you position yourself in this industry after 2 years.
+
+	Myself after 2 years I be in anywhere, but where I should be move with positive aspects and good reputation among people and my colleagues and dont lost my behaviour.
+
+5. List 3 projects / products you have built or have planned to build in the upcoming year, also explain your role in the same.
+	
+	Firstly CrytpPrice analysis with API: My contribution for that is creta a backend services in api responses and request.
+	Second Diabetic Prediction : It is built on my internship through which I learnt lot of things in Machine Learning concepts.
+
+	Last My ongoing Project Book Recommendation: It is based on collaborative filtering and Machine learning oriented which suggest the books based on user emotion and their behaviour.
+	

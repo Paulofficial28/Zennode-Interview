@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <script>
+       function calculateDiscount(cartTotal, quantities) {
+    const flat10Discount = cartTotal > 200 ? 10 : 0;
+    const bulk5Discount = quantities.reduce((acc, quantity) => acc + (quantity > 10 ? quantity * 0.05 : 0), 0);
+    const bulk10Discount = sum(quantities) > 20 ? 0.1 * cartTotal : 0;
+    const tiered50Discount = sum(quantities.map(quantity => (quantity > 15 && sum(quantities) > 30) ? quantity - 15 : 0)) * 0.5;
+
+    const discountOptions = {
+        flat_10_discount: flat10Discount,
+        bulk_5_discount: bulk5Discount,
+        bulk_10_discount: bulk10Discount,
+        tiered_50_discount: tiered50Discount
+    };
+
+    const maxDiscountName = Object.keys(discountOptions).reduce((a, b) => discountOptions[a] > discountOptions[b] ? a : b);
+    const maxDiscountAmount = discountOptions[maxDiscountName];
+
+    return [maxDiscountName, maxDiscountAmount];
+}
+
+function sum(array) {
+    return array.reduce((acc, val) => acc + val, 0);
+}
+
+function main() {
+    const products = ["Product A", "Product B", "Product C"];
+    const prices = [20, 40, 50];
+    const quantities = products.map(product => parseInt(prompt(`Enter quantity for ${product}:`), 10));
+    const giftWraps = prompt("Is Products wrapped as a gift? (yes/no):").toLowerCase();
+    const giftWrapFee = giftWraps === "yes" ? sum(quantities) : 0;
+    const shippingFee = Math.floor(sum(quantities) / 10) * 5;
+
+    const cartTotal = sum(products.map((_, i) => prices[i] * quantities[i]));
+    const [discountName, discountAmount] = calculateDiscount(cartTotal, quantities);
+
+    const subtotal = cartTotal - discountAmount;
+    const total = subtotal + giftWrapFee + shippingFee;
+
+    console.log("\nInvoice:");
+    products.forEach((product, i) => {
+        console.log(`${product} - Quantity: ${quantities[i]}  - Total: $${prices[i] * quantities[i]}`);
+    });
+
+    console.log("\nSubtotal:", subtotal);
+    console.log(`Discount Applied: ${discountName} - Amount: ${discountAmount}`);
+    console.log("Gift Wrap Fee:", giftWrapFee);
+    console.log("Shipping Fee:", shippingFee);
+    console.log("\nTotal:", total);
+}
+
+main();
+
+        
+    </script>
+</body>
+</html>

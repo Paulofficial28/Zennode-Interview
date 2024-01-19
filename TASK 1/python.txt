@@ -1,0 +1,4 @@
+1. Create the python file and named Task1.py.
+2. Then Create the code for requirements.
+3.After the code finished , we have to run in terminal by "python Task1.py" command.
+4.The output will shown below the terminal.
